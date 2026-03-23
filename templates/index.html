@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Fitness Coach</title>
+    <link rel="stylesheet"
+    href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+
+
+<div class="container">
+
+<h1>AI Fitness Coach</h1>
+
+<form method="POST">
+    Age:
+    <input type="number" name="age" required>
+
+    Height (cm):
+    <input type="number" name="height" required>
+
+    Weight (kg):
+    <input type="number" name="weight" required>
+
+    Goal:
+    <select name="goal">
+        <option value="bulk">Bulk</option>
+        <option value="cut">Cut</option>
+        <option value="maintain">Maintain</option>
+    </select>
+
+    Training Days per Week:
+    <input type="number" name="days" min="3" max="6" required>
+
+    <button type="submit">Generate Plan</button>
+</form>
+
+{% if calories %}
+<div class="results">
+    <h2>Your Personalized Plan</h2>
+    <p><strong>Daily Calories:</strong> {{ calories }} kcal</p>
+    <p><strong>Protein Needed:</strong> {{ protein }} grams</p>
+    <p><strong>BMI:</strong> {{ bmi }}</p>
+    <p><strong>BMI Status:</strong> {{ bmi_status }}</p>
+    <p><strong>Workout Plan:</strong> {{ workout }}</p>
+    <p><strong>Diet Suggestion:</strong> {{ diet }}</p>
+</div>
+{% endif %}
+
+</div>
+
+
+</body>
+</html>
