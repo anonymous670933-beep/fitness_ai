@@ -29,9 +29,14 @@ User Input → Calculation → Decision Logic → Output
 
 ---
 
-## 📸 Output
+## 📸 Input
 
-(Screenshots will be added here)
+<img width="956" height="816" alt="Screenshot 2026-04-25 131852" src="https://github.com/user-attachments/assets/a03c0310-0aa8-4010-a593-30947687e8aa" />
+
+
+## 📸 Output 
+
+<img width="568" height="882" alt="Screenshot 2026-04-25 140947" src="https://github.com/user-attachments/assets/d69d6f7d-06fb-4093-a6b7-4fafa40bbcb9" />
 
 ---
 
